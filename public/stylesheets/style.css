@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #d9ead3;
+  --secondary: #221010;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--secondary);
+  align-items: center;
+}
+
+header h1 {
+  background-color: var(--primary);
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  width: 30%;
+  box-shadow: 4px 4px #A7A7A7;
+}
+
+header h1 a {
+  font-size: x-large;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+html {
+  background-color: var(--primary);
+}
+
+nav {
+  text-decoration: none;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 38%;
+  margin-top: 20px;
+}
+
+nav a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  padding: 1%;
+  color: var(--primary);
+  transition: background-color .1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  border-style: solid;
+  border-width: thick;
+  margin-bottom: 10px;
+}
+
+textarea, input {
+  padding: .5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #3486eb;
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+  background-color: var(--primary);
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.title {
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+
+.title a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+  background-color: #fff5eb;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: .5%;
+  opacity: .6;
+}
+
+.new-post-form input {
+  width: 300px;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+}
