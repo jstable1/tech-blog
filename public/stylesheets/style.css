@@ -50,9 +50,15 @@ button {
   border: 0;
   padding: 1%;
   color: var(--primary);
-  transition: background-color .1s;
+  background-color: var(--secondary);
   cursor: pointer;
   border-radius: 5px;
+}
+
+button:hover {
+  color: var(--secondary);
+  background-color: var(--primary);
+  border: 2px solid var(--secondary);
 }
 
 .post-list {
@@ -102,31 +108,28 @@ main {
   background-color: var(--primary);
 }
 
-.btn-no-style {
+/* .btn-no-style {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   text-decoration: none;
   font-size: 100%;
-}
+} */
 
-.delete-post-btn {
-  background-color: #d41414;
-}
-
-.delete-post-btn:hover {
-  background-color: #ff643d;
-}
-
-.post {
-  margin-bottom: 2%;
-  line-height: 150%;
+.content {
+  align-items: center;
+  padding: 15px;
 }
 
 .title {
   color: var(--primary);
   background-color: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  padding: 15px;
 }
 
 .title a {
@@ -134,9 +137,17 @@ main {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
+  padding: 15px 0px 5px 15px;
+  text-decoration: none;
+  color: var(--secondary);
 }
 
 .comment-form {
@@ -159,7 +170,12 @@ main {
 }
 
 .new-post-form input {
-  width: 300px;
+  width: 50vw;
+}
+
+.new-post-textbox {
+  height: 10vw;
+  width: 50vw;
 }
 
 .edit-post-form {
