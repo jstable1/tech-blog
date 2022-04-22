@@ -118,7 +118,7 @@ li {
 
 main {
   flex: 1;
-  padding: 2% 4%;
+  padding: 2%;
   background-color: var(--primary);
 }
 
