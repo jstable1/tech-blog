@@ -12,6 +12,79 @@ article a {
   text-decoration: none;
 }
 
+button {
+  border: 0;
+  padding: 1%;
+  color: var(--primary);
+  background-color: var(--secondary);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: var(--secondary);
+  background-color: var(--primary);
+  border: 2px solid var(--secondary);
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.btn-no-style:hover {
+  color: var(--primary);
+  background-color: var(--secondary);
+  border: none;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.content {
+  align-items: center;
+  padding: 15px;
+}
+
+.edit-link {
+  display: block;
+  margin: -1.5% 0 2% 0;
+  padding: 15px 0px 5px 15px;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.edit-post-content-box {
+  min-height: 10vw;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+.edit-post-form input {
+  margin-bottom: 5px;
+  width: 50vw;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+
 header {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--secondary);
@@ -37,6 +110,18 @@ html {
   background-color: var(--primary);
 }
 
+li {
+  border-style: solid;
+  border-width: thick;
+  margin-bottom: 10px;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+  background-color: var(--primary);
+}
+
 nav {
   text-decoration: none;
   margin-left: 20px;
@@ -51,31 +136,19 @@ nav a {
   text-decoration: none;
 }
 
-button {
-  border: 0;
-  padding: 1%;
-  color: var(--primary);
-  background-color: var(--secondary);
-  cursor: pointer;
-  border-radius: 5px;
+.new-post-form input {
+  width: 50vw;
 }
 
-button:hover {
-  color: var(--secondary);
-  background-color: var(--primary);
-  border: 2px solid var(--secondary);
+.new-post-textbox {
+  height: 10vw;
+  width: 50vw;
 }
 
 .post-list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-li {
-  border-style: solid;
-  border-width: thick;
-  margin-bottom: 10px;
 }
 
 textarea, input {
@@ -87,39 +160,6 @@ textarea, input {
 textarea {
   width: 50vw;
   min-height: 100px;
-}
-
-form > div {
-  margin-bottom: 2%;
-}
-
-form label {
-  display: block;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-  padding: 2% 4%;
-  background-color: var(--primary);
-}
-
-/* .btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 100%;
-} */
-
-.content {
-  align-items: center;
-  padding: 15px;
 }
 
 .title {
@@ -142,51 +182,7 @@ ul {
   padding: 0px;
 }
 
-.edit-link {
-  display: block;
-  margin: -1.5% 0 2% 0;
-  padding: 15px 0px 5px 15px;
-  text-decoration: none;
-  color: var(--secondary);
-}
-
-.comment-form {
-  margin-bottom: 5%;
-}
-
-.comment {
-  padding: 1%;
-  margin-bottom: 1%;
-}
-
-/* .comment:nth-child(odd) {
-  background-color: #fff5eb;
-}
-
-.comment .meta {
-  font-size: 90%;
-  margin-bottom: .5%;
-  opacity: .6;
-} */
-
-.new-post-form input {
-  width: 50vw;
-}
-
-.new-post-textbox {
-  height: 10vw;
-  width: 50vw;
-}
-
-.edit-post-content-box {
-  min-height: 10vw;
-}
-
-.edit-post-form {
-  margin-bottom: 5%;
-}
-
-.edit-post-form input {
-  margin-bottom: 5px;
-  width: 50vw;
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
